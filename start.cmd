@@ -21,6 +21,11 @@ set LIB_DIR="%CURRENT%\%LIB_DIR_NAME%"
 
 set SLEEP_TIME=5
 
+if not exist "%CURRENT%\conf\config.cmd" (
+  call %LIB_DIR%\error.cmd 101
+  goto :end
+)
+
 call %LIB_DIR%\check_config.cmd "%CURRENT%\conf\config.cmd"
 if errorlevel 1 (
   call %LIB_DIR%\error.cmd %errorlevel%

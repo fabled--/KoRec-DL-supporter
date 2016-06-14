@@ -3,6 +3,13 @@
 ::::::::::::::::::::::::::::::
 @echo off
 
+if %1 equ 101 (
+  set USE_TASK_SCHEDULER=1
+  echo ^>^> "conf\config.cmd" が見つかりません
+  echo "conf\config.cmd" を作成してください。処理を中断します[err=%1]
+  echo;
+)
+
 if %1 equ 110 (
   echo :: ^>^> KOREC_DIR が設定されていません
   echo "config.cmd" を確認してください。処理を中断します[err=%1]
