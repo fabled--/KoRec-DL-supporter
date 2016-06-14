@@ -7,7 +7,7 @@ call %1
 cd >nul 2>&1
 
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo :: "conf\config.cmd" 縺ｮ險ｭ螳壹メ繧ｧ繝�繧ｯ...
+echo :: "conf\config.cmd" の設定チェック...
 
 ::::::::::::::::::::::::::::::
 rem KOREC_DIR
@@ -42,7 +42,7 @@ if not exist %DL_ROOT_DIR% (
 
 echo :: ^>^> DL_ROOT_DIR OK.
 
-echo :: "conf\config.cmd" 縺ｮ險ｭ螳壹メ繧ｧ繝�繧ｯ OK.
+echo :: "conf\config.cmd" の設定チェック OK.
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo;
 

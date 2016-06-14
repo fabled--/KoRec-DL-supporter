@@ -7,7 +7,7 @@ call %1
 cd >nul 2>&1
 
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo :: "%SERVICE_DIR_NAME%\%~nx1" 縺ｮ險ｭ螳壹メ繧ｧ繝�繧ｯ...
+echo :: "%SERVICE_DIR_NAME%\%~nx1" の設定チェック...
 
 ::::::::::::::::::::::::::::::
 rem SERVICE_NAME
@@ -71,7 +71,7 @@ if not exist %LOG_DIR%\ (
 
 echo :: ^>^> USE_OUTPUT_LOG OK. [%USE_OUTPUT_LOG%]
 
-echo :: "%SERVICE_DIR_NAME%\%~nx1" 縺ｮ險ｭ螳壹メ繧ｧ繝�繧ｯ OK.
+echo :: "%SERVICE_DIR_NAME%\%~nx1" の設定チェック OK.
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 exit /b

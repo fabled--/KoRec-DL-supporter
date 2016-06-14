@@ -35,14 +35,14 @@ for %%i in (%SERVICE_DIR%\*.cmd) do (
     echo;
   ) else (
     call %LIB_DIR%\download.cmd
-    echo ^>^> %SLEEP_TIME% ç§’é–“å¾…æ©Ÿã—ã¾ã™
+    echo ^>^> %SLEEP_TIME% •bŠÔ‘Ò‹@‚µ‚Ü‚·
     timeout /t %SLEEP_TIME% /nobreak >nul 2>&1
     echo;
   )
 )
 
 :end
-echo KoRec-DL supporter ã‚’çµ‚äº†ã—ã¾ã™
+echo KoRec-DL supporter ‚ğI—¹‚µ‚Ü‚·
 
 if %USE_TASK_SCHEDULER% equ 0 (
   pause

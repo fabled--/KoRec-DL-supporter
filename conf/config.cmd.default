@@ -4,21 +4,21 @@
 @echo off
 
 ::::::::::::::::::::::::::::::
-rem タスクスケジューラに登録して使う場合は 1 にする
-rem 初期値 0
+rem �^�X�N�X�P�W���[���ɓo�^���Ďg���ꍇ�� 1 �ɂ���
+rem �����l 0
 ::::::::::::::::::::::::::::::
 set USE_TASK_SCHEDULER=0
 
 ::::::::::::::::::::::::::::::
-rem KoRec.exeとKoRec-DL.exeの置いてあるフォルダをフルパスで設定する
-rem 初期値 "%CURRENT%\bin"
+rem KoRec.exe��KoRec-DL.exe�̒u���Ă���t�H���_���t���p�X�Őݒ肷��
+rem �����l "%CURRENT%\bin"
 ::::::::::::::::::::::::::::::
 set KOREC_DIR="%CURRENT%\bin"
 
 ::::::::::::::::::::::::::::::
-rem ダウンロードしたファイルを保存するルートフォルダをフルパスで設定する
-rem このフォルダの下にサービス名別のフォルダが作成され、その中に保存される
-rem 初期値 "%CURRENT%\downloads"
+rem �_�E�����[�h�����t�@�C����ۑ����郋�[�g�t�H���_���t���p�X�Őݒ肷��
+rem ���̃t�H���_�̉��ɃT�[�r�X���ʂ̃t�H���_���쐬����A���̒��ɕۑ������
+rem �����l "%CURRENT%\downloads"
 ::::::::::::::::::::::::::::::
 set DL_ROOT_DIR="%CURRENT%\downloads"
 

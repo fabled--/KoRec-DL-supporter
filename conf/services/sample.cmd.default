@@ -4,34 +4,34 @@
 @echo off
 
 ::::::::::::::::::::::::::::::
-rem サービス名を設定する
-rem 初期値では拡張子を除くファイル名が設定される
-rem この名前がDLフォルダやリスト、フィルター名に使われる
-rem 初期値 "%~n0"
+rem �T�[�r�X����ݒ肷��
+rem �����l�ł͊g���q�������t�@�C�������ݒ肳���
+rem ���̖��O��DL�t�H���_�⃊�X�g�A�t�B���^�[���Ɏg����
+rem �����l "%~n0"
 ::::::::::::::::::::::::::::::
 set SERVICE_NAME="%~n0"
 
 ::::::::::::::::::::::::::::::
-rem サービス個別のリストファイルを利用するかどうか
-rem 0の場合、lists\korec-dl-downloadlist.xml を利用する
-rem 1の場合、lists\%SERVICE_NAME%.xml を利用する
-rem 初期値 0
+rem �T�[�r�X�ʂ̃��X�g�t�@�C���𗘗p���邩�ǂ���
+rem 0�̏ꍇ�Alists\korec-dl-downloadlist.xml �𗘗p����
+rem 1�̏ꍇ�Alists\%SERVICE_NAME%.xml �𗘗p����
+rem �����l 0
 ::::::::::::::::::::::::::::::
 set USE_LIST=0
 
 ::::::::::::::::::::::::::::::
-rem フィルターファイルを利用するかどうか
-rem 0の場合、利用しない
-rem 1の場合、filters\%SERVICE_NAME%.xslt を利用する
-rem 初期値 1
+rem �t�B���^�[�t�@�C���𗘗p���邩�ǂ���
+rem 0�̏ꍇ�A���p���Ȃ�
+rem 1�̏ꍇ�Afilters\%SERVICE_NAME%.xslt �𗘗p����
+rem �����l 1
 ::::::::::::::::::::::::::::::
 set USE_FILTER=1
 
 ::::::::::::::::::::::::::::::
-rem KoRec-DLのログ出力を行うかどうか
-rem 0の場合、出力しない
-rem 1の場合、logs\%SERVICE_NAME%.log.txt に出力する
-rem 初期値 1
+rem KoRec-DL�̃��O�o�͂��s�����ǂ���
+rem 0�̏ꍇ�A�o�͂��Ȃ�
+rem 1�̏ꍇ�Alogs\%SERVICE_NAME%.log.txt �ɏo�͂���
+rem �����l 1
 ::::::::::::::::::::::::::::::
 set USE_OUTPUT_LOG=1
 

@@ -4,17 +4,17 @@
 @echo off
 setlocal
 
-echo ã‚µãƒ¼ãƒ“ã‚¹å: %SERVICE_NAME%
+echo ƒT[ƒrƒX–¼: %SERVICE_NAME%
 
 call :check_download_dir
-echo ^>^> %DL_DIR% ã«ç§»å‹•ã—ã¾ã™
+echo ^>^> %DL_DIR% ‚ÉˆÚ“®‚µ‚Ü‚·
 pushd %DL_DIR%
 
 call :generate_korec_param
-echo ^>^> KoRec-DL ã‚’å®Ÿè¡Œã—ã¾ã™
+echo ^>^> KoRec-DL ‚ðŽÀs‚µ‚Ü‚·
 
 "%KOREC_DIR:~1,-1%\KoRec-DL.exe" %KOREC_PARAM%
-echo ^>^> KoRec-DL ã®å®Ÿè¡ŒãŒçµ‚äº†ã—ã¾ã—ãŸ
+echo ^>^> KoRec-DL ‚ÌŽÀs‚ªI—¹‚µ‚Ü‚µ‚½
 
 popd
 endlocal
